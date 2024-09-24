@@ -6,7 +6,6 @@ import Layout from "./Layout.js";
 
 // Import your pages/components
 import Home from "./pages/Home";
-import Login from './components/index.js';
 import Chat from "./pages/Chat";
 import YetToBeDone from "./pages/YetToBeDone";
 import Bot from "./pages/chatbot/Bot";
