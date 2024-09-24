@@ -35,7 +35,7 @@ import CompleteRegistration from './pages/Investor_Dashboard/CompleteRegistratio
 import StartupRegistration from './pages/Startup_Dashboard/CompleteRegistration/index.js';
 import DAPPage from './pages/Startup_Dashboard/CompleteRegistration/components/dap_page.js';
 import InAppCoins from './pages/Startup_Dashboard/InAppMarketplace/InAppCoins.js';
-import { Login } from './components/index.js';
+import Login from './components/Authentication/Login.jsx';
 const App = () => {
   const location = useLocation();
   const shouldRenderAdminActions =
