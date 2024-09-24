@@ -6,6 +6,7 @@ import Layout from "./Layout.js";
 
 // Import your pages/components
 import Home from "./pages/Home";
+import Login from './components/index.js';
 import Chat from "./pages/Chat";
 import YetToBeDone from "./pages/YetToBeDone";
 import Bot from "./pages/chatbot/Bot";
@@ -34,6 +35,7 @@ import CompleteRegistration from './pages/Investor_Dashboard/CompleteRegistratio
 import StartupRegistration from './pages/Startup_Dashboard/CompleteRegistration/index.js';
 import DAPPage from './pages/Startup_Dashboard/CompleteRegistration/components/dap_page.js';
 import InAppCoins from './pages/Startup_Dashboard/InAppMarketplace/InAppCoins.js';
+import { Login } from './components/index.js';
 const App = () => {
   const location = useLocation();
   const shouldRenderAdminActions =
@@ -44,7 +46,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPg />} />
-          <Route path="/login" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/startup/inappcoins" element={<InAppCoins />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/investor/dashboard" element={<InvestorDashboard />} />
